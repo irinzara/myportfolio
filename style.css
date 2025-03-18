@@ -1,0 +1,51 @@
+/* Set full-screen dark background */
+body {
+    background-color: #191818;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Preloader container */
+#preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Text container */
+.hello-text-container {
+    text-align: center;
+}
+
+/* Text styling */
+.hello-text span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    display: none; /* Initially hidden */
+}
+
+/* Animation: Show one word at a time */
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }  /* Show */
+    90% { opacity: 1; }  /* Hold */
+    100% { opacity: 0; } /* Hide */
+}
+
+/* Apply animation to each span */
+.hello-text span:nth-child(1) { animation: fadeInOut 7s infinite 0s; }
+.hello-text span:nth-child(2) { animation: fadeInOut 7s infinite 0.7s; }
+.hello-text span:nth-child(3) { animation: fadeInOut 7s infinite 1.4s; }
+.hello-text span:nth-child(4) { animation: fadeInOut 7s infinite 2.1s; }
+.hello-text span:nth-child(5) { animation: fadeInOut 7s infinite 2.8s; }
+.hello-text span:nth-child(6) { animation: fadeInOut 7s infinite 3.5s; }
+.hello-text span:nth-child(7) { animation: fadeInOut 7s infinite 4.2s; }
+.hello-text span:nth-child(8) { animation: fadeInOut 7s infinite 4.9s; }
+.hello-text span:nth-child(9) { animation: fadeInOut 7s infinite 5.6s; }
+.hello-text span:nth-child(10) { animation: fadeInOut 7s infinite 6.3s; }
